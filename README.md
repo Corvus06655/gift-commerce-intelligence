@@ -2,15 +2,22 @@
 
 **Revenue, Customer & Fulfillment Analytics**
 
-This repository contains a reproducible, privacy-conscious analysis of the Ferns and Petals sales dataset. It organizes the source order and product data into analysis-ready tables, checks the completeness and integrity of every supplied tabular profile, and validates the computed headline metrics against the supplied dashboard PDF.
+This repository contains an Excel-based analysis of the Ferns and Petals sales dataset. The project uses **Microsoft Excel, Power Query, PivotTables, PivotCharts, slicers, and Excel dashboard measures** to analyze revenue, customer behavior, product performance, and fulfillment. No Python, Pandas, or Power BI is used in this project.
+
+## Start here: primary project file
+
+> **Open `Gift_Commerce_Intelligence_Main.xlsx` first.** This is the main deliverable and contains the Excel workbook with the dashboard, measures, pivot outputs, slicers, and the project’s analysis model. The original workbook is also retained as `data/Book2.xlsx` for traceability.
+
+An interviewer can review the project in this order: open the main workbook, read the dashboard and workbook sheets, inspect the source data in `data/`, and then review the supporting tables and quality reports in `tables/` and `reports/`.
 
 ## Project contents
 
-| Directory | Contents |
+| Location | Contents |
 |---|---|
-| `data/` | Non-sensitive source files used for the analysis: orders and products. |
+| `Gift_Commerce_Intelligence_Main.xlsx` | **Primary Excel deliverable** containing the dashboard, measures, pivots, slicers, and analysis model. |
+| `data/` | Complete supplied source files: `Book2.xlsx`, `customers.csv`, `orders_fixed.csv`, and `products.csv`. |
 | `tables/` | Enriched orders plus revenue, product, city, customer-spend, occasion, and delivery analysis tables. |
-| `reports/` | Column-level data profile, data-quality checks, and dashboard validation results. |
+| `reports/` | Column-level data profiles, workbook sheet profile, data-quality checks, and dashboard validation results. |
 | `assets/` | Supplied dashboard PDF and reference image. |
 
 ## Key findings
@@ -21,13 +28,13 @@ Revenue is highest for **Anniversary** orders at ₹6,74,634, followed by **Raks
 
 The dashboard’s displayed average customer spend of **₹3,520.98** is mathematically equal to total revenue divided by total orders, so it behaves as an average order value rather than an average spend per unique customer. The unique-customer average derived from the data is **₹35,209.84**. This distinction is recorded in `reports/dashboard_validation.csv`.
 
-## Privacy note
+## Data and privacy note
 
-The supplied `customers.csv` and `Book2.xlsx` contain direct customer contact and address fields. They were used for validation but are **not copied into this repository**. The uploadable customer profile table contains only synthetic customer IDs, gender, order counts, quantities, revenue, and average order value. Do not commit raw customer contact information or addresses to a public repository.
+The complete supplied files are included because this is a private portfolio repository and the Excel workbook is the primary project deliverable. The customer source file contains contact and address fields; do not make this repository public or reuse those fields outside the intended interview review. The derived customer profile table remains privacy-reduced and contains analytical fields rather than names, phone numbers, emails, or addresses.
 
-## Reproducing the outputs
+## How to review the project
 
-The generated CSV outputs are static analysis deliverables created from the supplied files. The original processing script is retained outside the repository because it contains sandbox-specific input paths. To reproduce the analysis in another environment, adapt the script to point to the two source files in `data/`, load the withheld customer file locally, and regenerate the tables and reports.
+The workbook is the source of truth for the dashboard and Excel measures. The CSV files under `data/` are the supplied source tables, while the CSV files under `tables/` and `reports/` are supporting analysis and validation outputs prepared for review. The project’s analytical workflow is Excel and Power Query based; no Python or Pandas pipeline is required to open or understand the main deliverable.
 
 ## Data dictionary
 
