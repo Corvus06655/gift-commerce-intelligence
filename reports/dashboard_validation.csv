@@ -1,0 +1,5 @@
+metric,source_value,computed_value,difference,status
+Total Orders,1000.0,1000.0,0.0,MATCH
+Total Revenue (INR),3520984.0,3520984.0,0.0,MATCH
+Average Customer Spend (INR),3520.98,35209.84,31688.859999999997,REVIEW
+Average Delivery Time (days),5.53,5.53,0.0,REVIEW

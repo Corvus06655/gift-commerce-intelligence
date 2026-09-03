@@ -1,0 +1,15 @@
+{
+  "orders_rows": 1000,
+  "customers_rows": 100,
+  "products_rows": 70,
+  "duplicate_order_ids": 0,
+  "duplicate_customer_ids": 0,
+  "duplicate_product_ids": 0,
+  "orders_missing_customer_matches": 0,
+  "orders_missing_product_matches": 0,
+  "negative_or_zero_quantity": 0,
+  "invalid_delivery_sequence": 0,
+  "total_revenue_inr": 3520984.0,
+  "average_delivery_days": 5.53,
+  "average_customer_spend_inr": 35209.84
+}

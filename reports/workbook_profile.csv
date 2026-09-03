@@ -1,0 +1,7 @@
+Workbook,Sheet,Rows,Columns,Notes
+Book2.xlsx,Sheet1,64,16,Dashboard/pivot output with mostly unnamed columns
+Book2.xlsx,Sheet2,0,0,Empty sheet
+Book2.xlsx,fnp datasets,4,6,File metadata sheet
+Book2.xlsx,customers,100,7,Customer table; raw PII withheld
+Book2.xlsx,orders,1000,18,Enriched order table
+Book2.xlsx,products,70,6,Product catalog
