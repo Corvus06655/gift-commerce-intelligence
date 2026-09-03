@@ -1,4 +1,6 @@
-# FNP Sales Analysis
+# Gift Commerce Intelligence
+
+**Revenue, Customer & Fulfillment Analytics**
 
 This repository contains a reproducible, privacy-conscious analysis of the Ferns and Petals sales dataset. It organizes the source order and product data into analysis-ready tables, checks the completeness and integrity of every supplied tabular profile, and validates the computed headline metrics against the supplied dashboard PDF.
 
