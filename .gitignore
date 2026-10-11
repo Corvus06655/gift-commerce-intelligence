@@ -1,4 +1,15 @@
+# Python/editor leftovers
 __pycache__/
-*.pyc
+*.py[cod]
 .DS_Store
+Thumbs.db
+.vscode/
+
+# Excel temporary/lock files
+~$*.xlsx
+~$*.xls
+~$*.xlsm
+
+# Temporary exports and logs
 *.tmp
+*.log
