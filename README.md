@@ -14,14 +14,14 @@ This portfolio project analyzes the Ferns and Petals sales dataset using Microso
 
 The analysis covers revenue by occasion, product/category performance, order timing, customer spending, and fulfillment. The project uses Excel and Power Query; it does not require Python, Pandas, or Power BI.
 
-## Privacy-safe materials currently in the repository
+## Remaining materials (review before sharing)
 
-- `tables/`: derived analysis tables. Review each file before redistributing.
+- `tables/`: remaining aggregate and derived analysis tables. The customer-level enriched order export was removed from the public branch; review the remaining files before redistributing.
 - `reports/`: data profiles and validation reports.
-- `assets/`: presentation/reference materials; inspect them for personal data before sharing.
+- `assets/`: presentation/reference materials; inspect all pages and images for personal data before sharing.
 - `PROJECT_MANIFEST.md`: project assembly and data-privacy notes.
 
-The original workbook and source customer file are intentionally unavailable in this public branch while the privacy review is pending. Do not treat this copy as a fully reproducible workbook deliverable.
+The original workbook, source customer file, and customer-identifiable enriched order export are intentionally unavailable in this public branch while the privacy review is pending. The remaining reports may document historical source columns but do not contain the source contact values. Do not treat this copy as a fully reproducible workbook deliverable.
 
 ## Key findings from the prior analysis
 
@@ -33,7 +33,7 @@ The earlier dashboard’s displayed average customer spend of ₹3,520.98 equals
 
 1. Make the original repository private and review its commit history for exposed personal data.
 2. Create a sanitized workbook using synthetic or aggregated customer information.
-3. Remove names, phone numbers, emails, addresses, and other identifiers from source files, workbook sheets, pivot caches, hidden sheets, and exported assets.
+3. Remove names, phone numbers, emails, addresses, customer-linked order rows, and other identifiers from source files, workbook sheets, pivot caches, hidden sheets, and exported assets.
 4. Verify the source dataset's redistribution terms and document the source URL.
 5. Publish only the sanitized workbook and privacy-safe derived tables after checking them.
 
