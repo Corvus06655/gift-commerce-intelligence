@@ -1,39 +1,99 @@
 # Gift Commerce Intelligence
 
-**Revenue, Customer & Fulfillment Analytics**
+**Excel-based sales, customer, and fulfillment analytics for Ferns N Petals**
 
-This portfolio project analyzes the Ferns and Petals sales dataset using Microsoft Excel, Power Query, PivotTables, PivotCharts, slicers, and dashboard measures.
+Explore sales performance, customer behavior, product demand, order timing, and delivery trends through an Excel-first analytics project built with **Microsoft Excel, Power Query, PivotTables, PivotCharts, slicers, and dashboard reporting**.
 
-## Public repository status
+## Project at a glance
 
-> **Privacy note:** The original customer source file contained names, phone numbers, email addresses, and postal addresses. The source customer CSV and unreviewed Excel workbooks have been removed from the current public branch. The primary workbook is therefore **not currently included** in this public version.
+- **Business domain:** Gift commerce / e-commerce
+- **Primary tool:** Microsoft Excel
+- **Dataset:** Ferns and Petals sales dataset sourced from Kaggle
+- **Focus areas:** Revenue, products, occasions, customers, order timing, and fulfillment
 
-**Important:** Removing files from the latest commit does not remove them from earlier Git history. The repository owner should switch this repository to **Private immediately** and review/rewrite its Git history before making a sanitized public version. Do not publish the original workbook or customer-level source data unless it has been checked and all personal information has been removed.
+## Dashboard preview
 
-## Project overview
+![Gift Commerce dashboard reference](assets/dashboard_reference.png)
 
-The analysis covers revenue by occasion, product/category performance, order timing, customer spending, and fulfillment. The project uses Excel and Power Query; it does not require Python, Pandas, or Power BI.
+## Business questions
 
-## Remaining materials (review before sharing)
+This project is designed to answer questions such as:
 
-- `tables/`: remaining aggregate and derived analysis tables. The customer-level enriched order export was removed from the public branch; review the remaining files before redistributing.
-- `reports/`: data profiles and validation reports.
-- `assets/`: presentation/reference materials; inspect all pages and images for personal data before sharing.
-- `PROJECT_MANIFEST.md`: project assembly and data-privacy notes.
+1. How much revenue does the business generate, and how does it change over time?
+2. Which product categories and products contribute most to sales?
+3. Which occasions drive the highest revenue?
+4. At what times are orders placed most frequently?
+5. Which cities contribute most to the order volume?
+6. How do order quantity and delivery time relate?
+7. What do customer spending patterns tell us about the business?
 
-The original workbook, source customer file, customer-linked order source, customer-level profile, and customer-identifiable enriched order export are intentionally unavailable in this public branch while the privacy review is pending. The remaining `data/` directory contains the product catalog only. The remaining reports may document historical source columns but do not contain the source contact values. Do not treat this copy as a fully reproducible workbook deliverable.
+## Key findings
 
-## Key findings from the prior analysis
+Previously recorded analysis results:
 
-The project analysis reported 1,000 orders, 100 customers, and 70 products, with computed revenue of ₹35,20,984 and average delivery time of 5.53 days. These are **previously recorded results**, not newly re-run results from this privacy-reduced public copy.
+| Metric | Result |
+|---|---:|
+| Total orders | 1,000 |
+| Unique customers | 100 |
+| Products | 70 |
+| Total revenue | ₹35,20,984 |
+| Average delivery time | 5.53 days |
+| Average order value | ₹3,520.98 |
 
-The earlier dashboard’s displayed average customer spend of ₹3,520.98 equals total revenue divided by total orders, so it represents average order value rather than average spend per unique customer. The prior analysis calculated a unique-customer average of ₹35,209.84.
+**Metric note:** Average order value is total revenue divided by total orders. The previously calculated average revenue per unique customer was ₹35,209.84. These figures reflect the existing project analysis and have not been independently recalculated in this README update.
 
-## Before republishing
+## Tools and techniques
 
-1. Make the original repository private and review its commit history for exposed personal data.
-2. Create a sanitized workbook using synthetic or aggregated customer information.
-3. Remove names, phone numbers, emails, addresses, customer-linked order rows, and other identifiers from source files, workbook sheets, pivot caches, hidden sheets, and exported assets.
-4. Verify the source dataset's redistribution terms and document the source URL.
-5. Publish only the sanitized workbook and privacy-safe derived tables after checking them.
+- **Excel:** data exploration, formulas, PivotTables, PivotCharts, slicers, and dashboarding
+- **Power Query:** data preparation and transformation
+- **Data quality checks:** profile reports and validation outputs
+- **Business analysis:** revenue breakdowns, product and occasion comparisons, customer metrics, and fulfillment analysis
 
+## Repository structure
+
+```text
+gift-commerce-intelligence/
+├── Gift_Commerce_Intelligence_Main.xlsx
+├── data/
+│   ├── Book2.xlsx
+│   ├── customers.csv
+│   ├── orders_fixed.csv
+│   └── products.csv
+├── tables/
+│   ├── customer_profile.csv
+│   ├── orders_enriched.csv
+│   ├── product_popularity_by_occasion.csv
+│   ├── quantity_vs_delivery.csv
+│   ├── revenue_by_category.csv
+│   ├── revenue_by_hour.csv
+│   ├── revenue_by_month.csv
+│   ├── revenue_by_occasion.csv
+│   ├── top_10_cities.csv
+│   └── top_5_products.csv
+├── reports/
+│   ├── dashboard_validation.csv
+│   ├── data_profile.csv
+│   ├── data_quality_checks.json
+│   └── workbook_profile.csv
+├── assets/
+│   ├── dashboard_reference.png
+│   └── FernsandPetalsSalesAnalysis.pdf
+├── PROJECT_MANIFEST.md
+└── README.md
+```
+
+## How to explore the project
+
+1. Open `Gift_Commerce_Intelligence_Main.xlsx` in Microsoft Excel.
+2. Explore the dashboard and use available slicers or filters to change the view.
+3. Review the `tables/` directory for prepared analytical outputs.
+4. Check the `reports/` directory for profiling and data-quality summaries.
+5. Refer to the PDF and dashboard image in `assets/` for supporting project material.
+
+## Data source and usage
+
+The project dataset was sourced from Kaggle. Please refer to the original Kaggle dataset page for its license, attribution, and redistribution conditions. The repository retains the project’s source files and customer-level fields as provided for this analysis.
+
+## Project outcome
+
+This project demonstrates an end-to-end Excel analytics workflow: preparing sales data, building reusable summaries, validating key metrics, and presenting business insights in a dashboard-oriented format.
