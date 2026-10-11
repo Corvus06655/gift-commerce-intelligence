@@ -21,7 +21,7 @@ The analysis covers revenue by occasion, product/category performance, order tim
 - `assets/`: presentation/reference materials; inspect all pages and images for personal data before sharing.
 - `PROJECT_MANIFEST.md`: project assembly and data-privacy notes.
 
-The original workbook, source customer file, and customer-identifiable enriched order export are intentionally unavailable in this public branch while the privacy review is pending. The remaining reports may document historical source columns but do not contain the source contact values. Do not treat this copy as a fully reproducible workbook deliverable.
+The original workbook, source customer file, customer-linked order source, customer-level profile, and customer-identifiable enriched order export are intentionally unavailable in this public branch while the privacy review is pending. The remaining `data/` directory contains the product catalog only. The remaining reports may document historical source columns but do not contain the source contact values. Do not treat this copy as a fully reproducible workbook deliverable.
 
 ## Key findings from the prior analysis
 
