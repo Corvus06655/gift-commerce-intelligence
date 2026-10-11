@@ -1,9 +1,26 @@
 # Project Manifest
 
-This repository contains selected derived analysis tables, data-quality reports, dashboard validation notes, and reference assets for the Gift Commerce Intelligence portfolio project.
+## Overview
 
-The original customer source CSV, customer-linked order source, customer-level profile, unreviewed Excel workbooks, and customer-identifiable enriched order export have been removed from the current public branch because the source material included direct identifiers such as names, phone numbers, emails, and addresses. The main workbook is not included in this public copy pending a full privacy review.
+Gift Commerce Intelligence is an Excel-based sales analytics project built around the Ferns and Petals dataset sourced from Kaggle. The repository includes the primary workbook, source data files, prepared analytical tables, validation reports, and presentation/reference assets.
 
-The `reports/data_profile.csv` file records column-level checks for source and derived tables. The `reports/workbook_profile.csv` file records the structure of the original workbook, and `reports/dashboard_validation.csv` records the earlier dashboard headline checks. These are historical artifacts and do not mean the current public copy can independently reproduce the workbook. Review the remaining tables and assets for re-identification risk before redistributing them.
+## Project contents
 
-**Privacy remediation is incomplete until the repository is made private and its Git history is reviewed/cleaned.** Do not re-add original customer-level files or workbooks until all sheets, hidden data, pivot caches, and exported assets have been checked for personal information.
+- `Gift_Commerce_Intelligence_Main.xlsx`: primary Excel workbook for the project.
+- `data/`: customer, order, and product source files, including the Excel source workbook.
+- `tables/`: prepared analysis outputs for customer profiles, enriched orders, revenue trends, product performance, occasions, cities, and delivery patterns.
+- `reports/`: data profiling, workbook profiling, dashboard validation, and data-quality checks.
+- `assets/`: dashboard preview and PDF reference material.
+- `README.md`: project overview, key findings, repository structure, and instructions for exploring the project.
+
+## Analysis scope
+
+The project examines revenue, average order value, product/category performance, occasion-based sales, customer spending, order timing, city-level contribution, and fulfillment trends. Excel and Power Query are the main tools, with PivotTables, PivotCharts, and slicers used to support interactive exploration.
+
+## Data source
+
+The dataset was sourced from Kaggle. Refer to the original Kaggle dataset page for the applicable license, attribution requirements, and redistribution terms. File contents and metrics should be interpreted in the context of the source dataset and the analysis performed for this project.
+
+## Reproducibility
+
+Open `Gift_Commerce_Intelligence_Main.xlsx` in Microsoft Excel to explore the workbook and dashboard. The prepared CSV tables and reports provide supporting outputs for reviewing the analysis.
